@@ -1,15 +1,12 @@
 class Kent < Formula
   desc "Minimal terminal coding agent for professional engineering workflows"
   homepage "https://github.com/respawn-llc/kent"
-  url "https://github.com/respawn-llc/kent/releases/download/v2.7.2/kent_2.7.2_darwin_arm64.tar.gz"
-  sha256 "af1a8f6ab391ee67996f5b695a86387278e3ddf1e5b1a92c4ff2127810b9376c"
+  url "https://github.com/respawn-llc/kent/releases/download/v2.8.0/kent_2.8.0_darwin_arm64.tar.gz"
+  sha256 "3bdbcaf350c0cdbf4ec9f0130cadb0e3703f359db0fc33e54764b2469d05a8ab"
   license "AGPL-3.0-only"
 
   bottle do
     root_url "https://ghcr.io/v2/respawn-llc/tap"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "563350cd901719e24a517c9768c5804995db485c988c2f51406bf0bf5197b5ea"
-    sha256 cellar: :any_skip_relocation, arm64_linux:  "6b9d0fb94a879e90248f628d80f270d608ee0e6ea0fb5cfc1908cb475dd54317"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "5fc3623ed8335f379d12449b35dd98c85966d1e35e5d30a5f7c03815f4ec65df"
   end
 
   depends_on "ripgrep"
@@ -20,12 +17,12 @@ class Kent < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/respawn-llc/kent/releases/download/v2.7.2/kent_2.7.2_linux_arm64.tar.gz"
-      sha256 "01286064bdd5f8fbe634ce304c001bba9815793f8c4f61c2a3f1aebb69f5a6e5"
+      url "https://github.com/respawn-llc/kent/releases/download/v2.8.0/kent_2.8.0_linux_arm64.tar.gz"
+      sha256 "1beb24bcf48443013f6982be140676c0c2559878c3803385b1858927265080c0"
     end
     on_intel do
-      url "https://github.com/respawn-llc/kent/releases/download/v2.7.2/kent_2.7.2_linux_amd64.tar.gz"
-      sha256 "21dd8058b97fd28812e52348dc1c37e1dcd6ab46d2b258a0ef345e6864d7986f"
+      url "https://github.com/respawn-llc/kent/releases/download/v2.8.0/kent_2.8.0_linux_amd64.tar.gz"
+      sha256 "f41899bd1ec05866281c5035f7088136fc09a6a09a3ccd97a483e7df9a2bfb89"
     end
   end
 
