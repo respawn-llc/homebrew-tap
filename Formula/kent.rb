@@ -32,11 +32,12 @@ class Kent < Formula
     bin.install "kent_#{version}_#{os}_#{arch}" => "kent"
   end
 
-  def post_install
-    output = Utils.safe_popen_read(bin/"kent", "service", "restart", "--if-installed").strip
-    ohai output unless output.empty?
-  rescue => e
-    opoo "Kent background service restart failed after update: #{e.message}"
+  post_install_steps do
+    run "kent",
+        args:         ["service", "restart", "--if-installed"],
+        base:         :bin,
+        must_succeed: false,
+        print_stdout: true
   end
 
   def caveats
