@@ -1,6 +1,6 @@
 cask "kent-desktop" do
-  version "2.10.0"
-  sha256 "359d489b71e2629ac728b1a16d13265060508f88950b7f8cc312340c83f94070"
+  version "2.11.0"
+  sha256 "69600935da4f49335154c14a78b3e4837069b6b1bd25bb6f6401a7865e06d8e4"
 
   url "https://github.com/respawn-llc/kent/releases/download/v#{version}/Kent_#{version}_aarch64.dmg"
   name "Kent"
@@ -44,7 +44,7 @@ cask "kent-desktop" do
             File.rename(file.path, path)
           end
         RUBY
-        chdir:          "~/Library/Application Support/sh.kent",
+        chdir:          "~{{user}}/Library/Application Support/sh.kent",
         writable_paths: ["Library/Application Support/sh.kent"],
         writable_base:  :home
   end
