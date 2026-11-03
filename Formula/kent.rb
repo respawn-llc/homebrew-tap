@@ -7,6 +7,9 @@ class Kent < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/respawn-llc/tap"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "b4516f4591857282a81c664f5143b94fc2f6677925f3b5ca5dfc56670ea6f838"
+    sha256 cellar: :any_skip_relocation, arm64_linux:  "e57c61aa7722d87bcd82703003561d3ff14cdbce30058b98ed2426c7dfbc2cf4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ab8c77a7caed783d4bbccf8e22b8f787edb0976ebfccc6e7606d15c045a96f18"
   end
 
   depends_on "ripgrep"
