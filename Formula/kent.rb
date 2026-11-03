@@ -2,7 +2,7 @@ class Kent < Formula
   desc "Minimal terminal coding agent for professional engineering workflows"
   homepage "https://github.com/respawn-llc/kent"
   url "https://github.com/respawn-llc/kent/releases/download/v2.12.0/kent_2.12.0_darwin_arm64.tar.gz"
-  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  sha256 "e13bb9954e47d1e35d991a332fa6ecff24b2066e9b8b801732d42ba82c23c42f"
   license "AGPL-3.0-only"
 
   bottle do
@@ -18,11 +18,11 @@ class Kent < Formula
   on_linux do
     on_arm do
       url "https://github.com/respawn-llc/kent/releases/download/v2.12.0/kent_2.12.0_linux_arm64.tar.gz"
-      sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      sha256 "fead40b31a2894a3736ffd545e2054488e72e5498527ec96e30f4e1b4076883b"
     end
     on_intel do
       url "https://github.com/respawn-llc/kent/releases/download/v2.12.0/kent_2.12.0_linux_amd64.tar.gz"
-      sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      sha256 "77218194e07017924c2414a72083245712b08b3b5c0d53ce07c84b0f87f0e334"
     end
   end
 
